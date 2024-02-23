@@ -1,0 +1,16 @@
+variaveis
+utilizadas a partir do $
+pode-se usar letra maiuscula, minuscula, acentuação, simbolos simples
+
+
+
+constantes
+utilizadas a partir do const
+pode-se usar maiuscula, minuscula, numeros a partir do segundo caracteres
+
+
+função rand(primeiro parametro, segundo parametro) utilizado para numeros aleatorios
+
+função mt_rand() o mesmo que o rand() mas, melhor
+
+função random_int() gera numeros aletorios criptografados--lento demais
