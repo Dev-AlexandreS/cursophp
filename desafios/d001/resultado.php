@@ -23,7 +23,7 @@
             echo "<li>O seu antecessor é <strong>$anum</strong></li>";
             
             ?>
-        <button onclick="javascript:window.location.href='index.html'">Voltar</button>
+        c
         <!-- retorna a pagina de historico  -->
         <!-- <button onclick="javascript:history.go(-1)">Voltar</button>     -->
     </p>

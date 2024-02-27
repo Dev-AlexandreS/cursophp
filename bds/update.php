@@ -60,6 +60,7 @@
 
                     <input type="submit" value="Atualizar">
                 </form>
+                <button onclick="javascript:window.location.href='index.html'">Voltar</button>
             </section>
 
 </body>

@@ -10,16 +10,22 @@
     <main>
         <h1>Cadastro</h1>
         <form action="cadastrar.php" method="post">
+            
             <label for="n">Nome</label>
             <input type="text" name="n" id="n">
+
             <label for="email">email</label>
             <input type="email" name="email" id="email">
+
             <label for="s">senha</label>
             <input type="password" name="s" id="s">
+
             <input type="submit" value="Enviar">
+
         </form>
         <button onclick="javascript:window.location.href='select.php'">Visualizar</button>
         <button onclick="javascript:window.location.href='delete.html'">Deletar</button>
+        <button onclick="javascript:window.location.href='update.php'">Atualizar</button>
     </main>
 </body>
 </html>

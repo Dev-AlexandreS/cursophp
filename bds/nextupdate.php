@@ -64,6 +64,7 @@
         };
         mysqli_close($conexao)
         ?>
+        <button onclick="javascript:window.location.href='update.php'">Voltar</button>
     </section>
 </body>
 
