@@ -12,15 +12,8 @@
         <h1>Atualizar dados</h1>
         <?php 
             include("conexao.php");
-            
-            $nome = $_POST["n"];
-            
-            $cod = $_REQUEST["cod"];
-            
-            $email = $_POST["e"];
-            
-            $senha = $_POST["s"];
-            
+
+
             $sql = "SELECT * FROM usuarios";
                 
                 
@@ -52,29 +45,21 @@
             <section>
 
                 <h2>Digite os itens que deseja alterar</h2>
-                <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-                    <label for="cod">Digite o id à ser atualizado</label>
-                    <input type="number" name="cod" id="cod">
-                    
-                    <label for="n">Digite o nome à ser atualizado</label>
-                    <input type="text" name="n" id="n">
+                <form action="nextupdate.php" method="post">
+                    <label for="id">id</label>
+                    <input type="number" name="id">
 
-                    <label for="e">Digite o email à ser atualizado</label>
-                    <input type="email" name="e" id="e">
+                    <label for="nome">nome</label>
+                    <input type="text" name="nome">
 
-                    <label for="s">Digite a senha à ser atualizada</label>
-                    <input type="text" name="s" id="s">
+                    <label for="email">email</label>
+                    <input type="email" name="email">
 
-                    <input type="submit" value="Atualizar" onclick="return window.alert('Atualizado com sucesso')">
+                    <label for="senha">senha</label>
+                    <input type="password" name="senha">
+
+                    <input type="submit" value="Atualizar">
                 </form>
-                <?php
-              
-                    $update = "UPDATE usuarios SET nome = '$nome', email = '$email', senha = '$senha' WHERE id = '$cod'";
-
-                    mysqli_query($conexao, $update);
-
-                    mysqli_close($conexao);
-                ?>
             </section>
 
 </body>
